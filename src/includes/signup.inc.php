@@ -3,7 +3,6 @@
 
   if(isset($_POST["submit"])){
     
-
     //grabbing the data
     $uid = $_POST["uid"];
     $email = $_POST["email"];
@@ -12,7 +11,12 @@
 
     // instantiate the sign up controller class
     $signupController = new SignupController($uid, $email, $password, $confirmPassword);
+
+    // sign up the user
     $signupController->signupUser();
+
+    //redirect to the sign up page with no errors
+    header("location: ../pages/signup.php?error=none");
 
   } else{
     echo "404 Not Found!";

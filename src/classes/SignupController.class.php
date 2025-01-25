@@ -40,11 +40,11 @@
         exit();
       }
 
-      // $this->setUser();
+      $this->setUser($this->username, $this->email, $this->password);
     }
 
     // Check if the user has entered all the required fields
-    public function areFieldsEmpty(){
+    private function areFieldsEmpty(){
       $result = true;
 
       if(empty($this->username) || empty($this->email) || empty($this->password) || empty($this->confirmPassword)){
@@ -57,7 +57,7 @@
     }
 
     // Check if the username is valid
-    public function isUsernameValid(){
+    private function isUsernameValid(){
       $result = false;
 
       if(preg_match("/^[a-zA-Z0-9]*$/", $this->username)){
@@ -69,7 +69,7 @@
       return $result;
     }
 
-    public function isEmailValid(){
+    private function isEmailValid(){
       $result = false;
 
       if(filter_var($this->email, FILTER_VALIDATE_EMAIL)){
@@ -81,7 +81,7 @@
       return $result;
     }
 
-    public function doPasswordsMatch(){
+    private function doPasswordsMatch(){
       $result = false;
 
       if($this->password === $this->confirmPassword){
@@ -93,7 +93,7 @@
       return $result;
     }
 
-    public function isUserOrEmailExist(){
+    private function isUserOrEmailExist(){
       $result = true;
 
       if($this->userOrEmailExists($this->username, $this->email)){
