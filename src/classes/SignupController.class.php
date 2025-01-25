@@ -14,6 +14,35 @@
       $this->confirmPassword = $confirmPassword;
     }
 
+    public function signupUser(){
+      if($this->areFieldsEmpty()){
+        header("location: ../pages/signup.php?error=emptyFields");
+        exit();
+      }
+
+      if(!$this->isUsernameValid()){
+        header("location: ../pages/signup.php?error=username");
+        exit();
+      }
+
+      if(!$this->isEmailValid()){
+        header("location: ../pages/signup.php?error=email");
+        exit();
+      }
+
+      if(!$this->doPasswordsMatch()){
+        header("location: ../pages/signup.php?error=password");
+        exit();
+      }
+
+      if($this->isUserOrEmailExist()){
+        header("location: ../pages/signup.php?error=userOrEmailExists");
+        exit();
+      }
+
+      // $this->setUser();
+    }
+
     // Check if the user has entered all the required fields
     public function areFieldsEmpty(){
       $result = true;

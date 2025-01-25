@@ -12,13 +12,7 @@
 
     // instantiate the sign up controller class
     $signupController = new SignupController($uid, $email, $password, $confirmPassword);
-    if(!$signupController->isUserOrEmailExist()){
-      echo "Sign up successful!";
-      exit();
-    } else{
-      echo "username or email already exists!";
-      exit();
-    }
+    $signupController->signupUser();
 
   } else{
     echo "404 Not Found!";
