@@ -18,7 +18,7 @@
       <form action="./src/includes/login.inc.php" method="post">
         <div class="mb-4">
           <label for="username" class="block text-gray-700 font-medium">Username</label>
-          <input type="text" id="username" name="username" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          <input type="text" id="username" name="uid" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
         </div>
 
         <div class="mb-6">
