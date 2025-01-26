@@ -43,7 +43,6 @@
       $this->setUser($this->username, $this->email, $this->password);
     }
 
-    // Check if the user has entered all the required fields
     private function areFieldsEmpty(){
       $result = true;
 
@@ -56,7 +55,6 @@
       return $result;
     }
 
-    // Check if the username is valid
     private function isUsernameValid(){
       $result = false;
 
