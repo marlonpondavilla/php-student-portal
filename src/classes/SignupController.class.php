@@ -16,27 +16,27 @@
 
     public function signupUser(){
       if($this->areFieldsEmpty()){
-        header("location: ../pages/signup.php?error=emptyFields");
+        header("location: ../views/signup.php?error=emptyFields");
         exit();
       }
 
       if(!$this->isUsernameValid()){
-        header("location: ../pages/signup.php?error=username");
+        header("location: ../views/signup.php?error=username");
         exit();
       }
 
       if(!$this->isEmailValid()){
-        header("location: ../pages/signup.php?error=email");
+        header("location: ../views/signup.php?error=email");
         exit();
       }
 
       if(!$this->doPasswordsMatch()){
-        header("location: ../pages/signup.php?error=password");
+        header("location: ../views/signup.php?error=password");
         exit();
       }
 
       if($this->isUserOrEmailExist()){
-        header("location: ../pages/signup.php?error=userOrEmailExists");
+        header("location: ../views/signup.php?error=userOrEmailExists");
         exit();
       }
 

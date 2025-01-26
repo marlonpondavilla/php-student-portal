@@ -40,7 +40,7 @@
       </form>
 
       <div class="mt-4 text-center">
-        <p class="text-sm text-gray-600">Don't have an account? <a href="./src/pages/signup.php" class="text-blue-600 hover:underline">Sign up</a></p>
+        <p class="text-sm text-gray-600">Don't have an account? <a href="./src/views/signup.php" class="text-blue-600 hover:underline">Sign up</a></p>
       </div>
 
       <p class="text-center my-4">Or continue with</p>
