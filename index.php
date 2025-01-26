@@ -18,12 +18,12 @@
       <form action="./src/includes/login.inc.php" method="post">
         <div class="mb-4">
           <label for="username" class="block text-gray-700 font-medium">Username</label>
-          <input type="text" id="username" name="uid" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          <input type="text" id="username" name="uid" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" >
         </div>
 
         <div class="mb-6">
           <label for="password" class="block text-gray-700 font-medium">Password</label>
-          <input type="password" id="password" name="password" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          <input type="password" id="password" name="password" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" >
         </div>
 
         <div class="flex justify-between items-center">
@@ -34,7 +34,7 @@
           <a href="#" class="text-sm text-blue-600 hover:underline">Forgot password?</a>
         </div>
 
-        <button type="submit" name="submit" class="w-full bg-blue-500 text-white py-2 rounded-md mt-4 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button type="submit" name="login" class="w-full bg-blue-500 text-white py-2 rounded-md mt-4 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
           Login
         </button>
       </form>

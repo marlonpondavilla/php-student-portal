@@ -1,7 +1,11 @@
 <?php
+  include_once './autoloader.inc.php';
 
-  if(isset($_POST["submit"])){
-    echo "You are logged in!";
-  } else{
-    echo "You are not allowed to access this page!";
+  if(isset($_POST["login"])){
+    $username = $_POST["uid"];
+    $password = $_POST["password"];
+
+    $loginController = new LoginController($username, $password);
+    $loginController->loginUser();
+
   }

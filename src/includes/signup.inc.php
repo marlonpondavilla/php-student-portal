@@ -1,7 +1,7 @@
 <?php
   include_once './autoloader.inc.php';
 
-  if(isset($_POST["submit"])){
+  if(isset($_POST["signup"])){
     
     //grabbing the data
     $uid = $_POST["uid"];

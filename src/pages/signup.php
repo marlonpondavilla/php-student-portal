@@ -37,7 +37,7 @@
           <input type="password" id="confirmPassword" name="confirmPassword" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
         </div>
 
-        <button type="submit" name="submit" class="w-full bg-green-500 text-white py-2 rounded-md mt-4 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500">
+        <button type="submit" name="signup" class="w-full bg-green-500 text-white py-2 rounded-md mt-4 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500">
           Sign Up
         </button>
       </form>
